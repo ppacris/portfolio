@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+body {
+	/*	background-color: rgba(15, 15, 15, 255);*/
+	background-color: #fff;
+	display: grid;
+	margin: 0;
+	padding: 0;
+	place-items: center;
+}
+
+body::-webkit-scrollbar {
+	width: 5px;
+	background-color: transparent;
+}
+
+body::-webkit-scrollbar-track {
+	background-color: var(--scrollbar-track-color, #000000);
+}
+
+body::-webkit-scrollbar-thumb {
+	background: var(--scrollbar-color);
+	border-radius: 5px;
+}
+
+#particles-js {
+	position: relative;
+	height: 100svh;
+	width: 100%;
+	background-color: #000000;
+	overflow: hidden;
+}
+
+canvas {
+	display: block;
+	vertical-align: bottom;
+}
+
+nav {
+	position: fixed;
+	bottom: 10%;
+	left: 50%;
+	width: 100%;
+	transform: translateX(-50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: opacity .2s ease-in-out;
+	/* Added transition property */
+	opacity: 1;
+	/* Initial opacity */
+}
+
+.sticky {
+	top: 2%;
+	bottom: auto;
+	left: 50%;
+	opacity: 0;
+	/* Fade out when .sticky class is added */
+}
+
+.sticky ul {
+	background-color: #000000;
+	border-radius: 3rem;
+	padding: 1rem 1rem;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav ul li {
+	margin: 0 1.5rem;
+}
+
+nav ul li a {
+	font-family: 'Permanent Marker', cursive;
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.75rem;
+	position: relative;
+}
+
+nav ul li a:hover {
+	background: linear-gradient(to right, violet, #8F00FF);
+	background-position: 0 100%;
+	background-size: 100% .3rem;
+	background-repeat: no-repeat;
+	border-radius: 5px;
+}
+
+section {
+	height: 100vh;
+	position: relative;
+}
+
+/* --- Name Text Effect --- */
+
+:root {
+	--purple: rgb(123, 31, 162);
+	--violet: rgb(103, 58, 183);
+	--pink: rgb(244, 143, 177);
+}
+
+@keyframes background-pan {
+	from {
+		background-position: 0% center;
+	}
+
+	to {
+		background-position: -200% center;
+	}
+}
+
+@keyframes scale {
+
+	from,
+	to {
+		transform: scale(0);
+	}
+
+	50% {
+		transform: scale(1);
+	}
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(180deg);
+	}
+}
+
+#name,
+#backend {
+	font-family: 'Press Start 2P', cursive;
+	position: absolute;
+	color: white;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+}
+
+#name {
+	top: 10%;
+	font-size: 3rem;
+}
+
+#backend {
+	top: calc(5% + 16rem);
+	font-size: 1.5rem;
+}
+
+#name > .magic {
+	display: inline-block;
+	position: relative;
+	padding: 1rem;
+}
+
+#name > .magic > .magic-star {
+	--size: clamp(20px, 1.5vw, 30px);
+
+	animation: scale 700ms ease forwards;
+	display: block;
+	height: var(--size);
+	left: var(--star-left);
+	position: absolute;
+	top: var(--star-top);
+	width: var(--size);
+}
+
+#name > .magic > .magic-star > svg {
+	animation: rotate 1000ms linear infinite;
+	display: block;
+	opacity: 0.7;
+}
+
+#name > .magic > .magic-star > svg > path {
+	fill: var(--violet);
+}
+
+#name > .magic > .magic-text {
+	animation: background-pan 3s linear infinite;
+	background: linear-gradient(to right,
+			var(--purple),
+			var(--violet),
+			var(--pink),
+			var(--purple));
+	background-size: 200%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	white-space: nowrap;
+}
+
+#name > .magic > .magic-text.mobile {
+	display: none;
+}
+
+
+/* --- media query --- */
+
+@media (max-width: 1340px) {
+	#name {
+		font-size: 2rem;
+		top: 10%;
+	}
+
+	#backend {
+		font-size: 1rem;
+		top: calc(5% + 13rem);
+		/* Adjust the margin top value as desired */
+	}
+
+	nav ul li a {
+		font-size: 1.3rem;
+	}
+}
+
+@media (max-width: 900px) {
+	#name {
+		font-size: 2rem;
+		top: 10%;
+	}
+
+	#backend {
+		font-size: 1rem;
+		top: calc(5% + 13rem);
+		/* Adjust the margin top value as desired */
+	}
+}
+
+#hamburger {
+	display: none;
+}
+
+@media (max-width: 825px) {
+	#hamburger {
+		display: flex;
+	}
+
+	#name > .magic > .magic-text {
+		display: none;
+	}
+
+	#name > .magic > .magic-text.mobile {
+		white-space: pre;
+		display: inline;
+	}
+
+	#name {
+		font-size: 1.3rem;
+		top: 10%;
+	}
+
+	#backend {
+		font-size: 0.5rem;
+		top: calc(5% + 16rem);
+		/* Adjust the margin top value as desired */
+	}
+
+	nav ul li a,
+	.sticky ul {
+		display: none;
+	}
+}
+
+
+/* mobile hamburge navigation */
+.nav__btn {
+	background: radial-gradient(circle, rgb(244, 143, 177), rgb(143, 0, 255));
+	border-radius: 50%;
+	align-items: center;
+	cursor: pointer;
+	display: flex;
+	height: 60px;
+	width: 60px;
+	justify-content: center;
+	position: fixed;
+	right: 20px;
+	top: 20px;
+	z-index: 2;
+	touch-action: manipulation;
+}
+
+.nav__btn svg {
+	display: block;
+	flex: 1;
+	height: 24px;
+	width: auto;
+}
+
+.nav__btn--overlay {
+	background-color: transparent;
+	backdrop-filter: blur(4px);
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	z-index: 1;
+}
+
+.nav__drawer__wrapper {
+	align-items: center;
+	background: radial-gradient(circle, rgb(143, 0, 255, .25), rgb(244, 143, 177, .25));
+	backdrop-filter: blur(25px);
+	border-radius: 50%;
+	/* Make it circular */
+	height: 60rem;
+	width: 60rem;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	right: -500px;
+	/* Position it at the top-right corner */
+	transform: translate(50%, -50%);
+	/* Center the circle */
+	text-align: center;
+	transition: right 0.2s ease-in-out;
+	z-index: 3;
+}
+
+.nav__drawer__active {
+	display: flex;
+	right: 0;
+}
+
+.nav__close__btn {
+	background: radial-gradient(circle, rgb(244, 143, 177), rgb(143, 0, 255));
+	border-radius: 100%;
+	align-items: center;
+	cursor: pointer;
+	display: flex;
+	height: 60px;
+	width: 60px;
+	justify-content: center;
+	position: absolute;
+	right: 52%;
+	top: 52%;
+	touch-action: manipulation;
+}
+
+
+.nav__close__btn svg {
+	fill: #000;
+	flex: 1;
+	height: 22px;
+}
+
+.nav__drawer__content ul {
+	font-size: 2rem;
+	margin-top: 24rem;
+	margin-right: 24rem;
+	list-style: none;
+}
+
+
+.nav__drawer__content ul li {
+	margin: 0 1.5rem;
+}
+
+.nav__drawer__content ul li a {
+	font-family: 'Permanent Marker', cursive;
+	text-decoration: none;
+	color: #fff;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
