@@ -6,8 +6,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" type="image/x-icon" href="assets/image/portfolio.png">
 	<title>Me, Myself &amp; I</title>
+
 	<link rel="stylesheet" href="style.css">
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Jquery -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 </head>
 
 <body id="smooth-scroll">
@@ -78,18 +84,67 @@
 		</section>
 	</div>
 
-	<section id="project"></section>
+	<section id="project">
+		<div id="project--bg" class="d-flex justify-content-center align-items-center">
+			<div class="row justify-content-center ms-1 me-1">
+				<div class="eeey-left col-lg-5 col-sm-12 mobile-1rem d-flex align-items-center">
+					<div id="carouselExampleDark" class="carousel carousel-dark slide border shadow" data-bs-ride="carousel">
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+						</div>
+						<div class="carousel-inner">
+							<div class="carousel-item active" data-bs-interval="10000">
+								<img src="assets/image/cgc-fss_home.png" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item" data-bs-interval="2000">
+								<img src="assets/image/cgc-fss_home.png" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img src="assets/image/cgc-fss_home.png" class="d-block w-100" alt="...">
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+				<div class="eeey-right col-lg-5 col-sm-10 border shadow p-3">
+					<p><b>CGC-FSS | Faculty Scheduling System</b></p>
+					<hr>
+					CGC-FSS is a scheduling system built for CGC (CITI Global College) that allows the scheduler to automate the scheduling process. Deployed on ph.000webhost.
+					<br /><br />
+					<b>Technology used:</b><br />
+					HTML, CSS (Bootstrap v5), JavaScript, PHP, MySQL, Excel spreadsheet, phpMailer, DataTables, html2canvas, FontAwesome.
+					<br /><br />
+					<b>Demo Account:</b>
+					<br />
+					Username: demo
+					<br />
+					<p>Password: demo1234$</p>
+					<a href="https://cgc-fss.000webhostapp.com/Prototype/login/" target="_blank" class="btn btn-primary">See Live</a>
+					<a href="https://github.com/ppacris" target="_blank" class="btn btn-primary">Source Code</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<section id="about"></section>
 
+	<!-- JavaScript -->
+	<!---------------------------------------------------->
 	<!-- custome particles-js -->
 	<script src="script1.js"></script>
-
 	<!-- particles-js -->
 	<script src="script2.js"></script>
-
 	<!-- magic name text -->
 	<script src="script3.js"></script>
-
 	<!-- scrollbar linear gradient percentage -->
 	<script type="text/javascript">
 		// Calculate the scroll percentage
@@ -114,7 +169,6 @@
 		updateScrollbarColor();
 
 	</script>
-
 	<!-- smooth scrolling at a tag click -->
 	<script type="text/javascript">
 		document.addEventListener('DOMContentLoaded', function() {
@@ -140,7 +194,6 @@
 		});
 
 	</script>
-
 	<!-- navbar transition -->
 	<script type="text/javascript">
 		window.onscroll = function() {
@@ -148,6 +201,7 @@
 		};
 
 		var navbar = document.getElementById("navbar");
+		var navbarUI = document.getElementById("UI");
 		var sticky = navbar.offsetTop;
 
 		function myFunction() {
@@ -175,9 +229,15 @@
 		}
 
 	</script>
+	<!-- smooth transition on project -->
+	<script type="text/javascript">
+		//Empty
 
+	</script>
 	<!-- mobile hamburge navigation -->
 	<script src="script4-mobile.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

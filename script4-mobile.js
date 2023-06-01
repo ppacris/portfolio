@@ -1,5 +1,5 @@
-var navDrawer = $('.nav__drawer__wrapper');
 var navActive = 'nav__drawer__active';
+var navDrawer = $('.nav__drawer__wrapper');
 var navOverlay = $('.nav__btn--overlay');
 var navBtn = $('.nav__btn');
 var navContent = $('.nav__drawer__content ul');

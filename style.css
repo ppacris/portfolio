@@ -2,9 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 body {
-	/*	background-color: rgba(15, 15, 15, 255);*/
-	background-color: #fff;
-	display: grid;
+	background-color: #FFFEFC;
+	/*	display: grid;*/
 	margin: 0;
 	padding: 0;
 	place-items: center;
@@ -26,7 +25,7 @@ body::-webkit-scrollbar-thumb {
 
 #particles-js {
 	position: relative;
-	height: 100svh;
+	height: 100vh;
 	width: 100%;
 	background-color: #000000;
 	overflow: hidden;
@@ -50,6 +49,7 @@ nav {
 	/* Added transition property */
 	opacity: 1;
 	/* Initial opacity */
+	z-index: 10;
 }
 
 .sticky {
@@ -61,7 +61,7 @@ nav {
 }
 
 .sticky ul {
-	background-color: #000000;
+	background-color: #000;
 	border-radius: 3rem;
 	padding: 1rem 1rem;
 }
@@ -94,9 +94,22 @@ nav ul li a:hover {
 }
 
 section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	height: 100vh;
+}
+
+#project--bg {
+	/*	background: linear-gradient(to bottom, white, #8F00FF 50%, white);*/
+	height: 70%;
+	width: 100%;
 	position: relative;
 }
+
+
+
+
 
 /* --- Name Text Effect --- */
 
@@ -223,6 +236,12 @@ section {
 	}
 }
 
+@media (max-width: 991px) {
+	#project--bg > .row > .mobile-1rem {
+		padding-bottom: 1rem;
+	}
+}
+
 @media (max-width: 900px) {
 	#name {
 		font-size: 2rem;
@@ -260,8 +279,8 @@ section {
 	}
 
 	#backend {
-		font-size: 0.5rem;
-		top: calc(5% + 16rem);
+		font-size: 0.55rem;
+		top: calc(5% + 21rem);
 		/* Adjust the margin top value as desired */
 	}
 
@@ -269,6 +288,14 @@ section {
 	.sticky ul {
 		display: none;
 	}
+}
+
+@media (max-width: 575px) {
+	#project--bg > .row > .mobile-1rem {
+		padding-bottom: 1rem;
+	}
+
+	#project--bg > .row > .pb-sm-3 > .
 }
 
 
@@ -313,16 +340,13 @@ section {
 	background: radial-gradient(circle, rgb(143, 0, 255, .25), rgb(244, 143, 177, .25));
 	backdrop-filter: blur(25px);
 	border-radius: 50%;
-	/* Make it circular */
 	height: 60rem;
 	width: 60rem;
 	justify-content: center;
 	position: fixed;
 	top: 0;
 	right: -500px;
-	/* Position it at the top-right corner */
 	transform: translate(50%, -50%);
-	/* Center the circle */
 	text-align: center;
 	transition: right 0.2s ease-in-out;
 	z-index: 3;
@@ -348,7 +372,6 @@ section {
 	touch-action: manipulation;
 }
 
-
 .nav__close__btn svg {
 	fill: #000;
 	flex: 1;
@@ -361,7 +384,6 @@ section {
 	margin-right: 24rem;
 	list-style: none;
 }
-
 
 .nav__drawer__content ul li {
 	margin: 0 1.5rem;
