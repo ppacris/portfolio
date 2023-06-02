@@ -212,6 +212,7 @@ section {
 	white-space: nowrap;
 }
 
+
 #name > .magic > .magic-text.mobile {
 	display: none;
 }
@@ -237,14 +238,14 @@ section {
 }
 
 @media (max-width: 991px) {
-	#project--bg > .row > .mobile-1rem {
+	#project--bg > .row > .mobile-pad-1rem {
 		padding-bottom: 1rem;
 	}
 }
 
 @media (max-width: 900px) {
 	#name {
-		font-size: 2rem;
+		font-size: 1.8rem;
 		top: 10%;
 	}
 
@@ -255,7 +256,8 @@ section {
 	}
 }
 
-#hamburger {
+#hamburger,
+.mobile-btn-details {
 	display: none;
 }
 
@@ -264,7 +266,10 @@ section {
 		display: flex;
 	}
 
-	#name > .magic > .magic-text {
+	#name > .magic > .magic-text,
+	nav ul li a,
+	.sticky ul,
+	.eeey-right {
 		display: none;
 	}
 
@@ -284,19 +289,31 @@ section {
 		/* Adjust the margin top value as desired */
 	}
 
-	nav ul li a,
-	.sticky ul {
-		display: none;
+	#project--bg > .row > .mobile-pad-1rem {
+		padding-bottom: 2rem;
+	}
+
+	.mobile-btn-details {
+		display: block;
 	}
 }
 
 @media (max-width: 575px) {
-	#project--bg > .row > .mobile-1rem {
+	#project--bg > .row > .mobile-pad-1rem {
 		padding-bottom: 1rem;
 	}
-
-	#project--bg > .row > .pb-sm-3 > .
 }
+
+
+
+@media (max-width: 375px) {
+	#backend {
+		font-size: 0.5rem;
+		top: calc(5% + 21rem);
+		/* Adjust the margin top value as desired */
+	}
+}
+
 
 
 /* mobile hamburge navigation */
