@@ -255,6 +255,10 @@ section {
 	display: none;
 }
 
+.card {
+	width: 28rem;
+}
+
 @media (max-width: 991px) {
 
 	/*-- HIDE default Navbar @Mobile sized --*/
@@ -281,6 +285,10 @@ section {
 
 	#project--bg > .row > .mobile-pad-1rem {
 		padding-bottom: 1rem;
+	}
+
+	.card {
+		width: 23rem;
 	}
 
 	.coming-soon:hover,
