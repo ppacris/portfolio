@@ -15,14 +15,14 @@ $('.nav__close__btn').click(function () {
 	navDrawer.removeClass(navActive);
 	navContent.fadeOut(1);
 	navOverlay.fadeOut(1);
-	navBtn.fadeIn(400);
+	navBtn.fadeIn(1);
 });
 
 $('.nav__drawer__content ul li a').click(function () {
 	navDrawer.removeClass(navActive);
 	navContent.fadeOut(1);
 	navOverlay.fadeOut(1);
-	navBtn.fadeIn(400);
+	navBtn.fadeIn(1);
 });
 
 

@@ -20,14 +20,11 @@
 	<!-- Favicon -->
 	<link rel="shortcut icon" type="image/svg+xml">
 	<title>pacris</title>
-
 	<link rel="stylesheet" href="style.css">
 	<!-- Bootstrap CSS -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
 	<!-- Jquery -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
 
 </head>
 
@@ -58,7 +55,7 @@
 		</p>
 		<p id="backend">Back - End&nbsp;&nbsp;Developer</p>
 		<nav id="navbar">
-			<ul>
+			<ul id="navUI">
 				<li><a href="#particles-js">Home</a></li>
 				<li><a href="#project">Project</a></li>
 				<li><a href="#about">About</a></li>
@@ -103,94 +100,157 @@
 	</div>
 
 	<section id="project">
-		<div id="project--bg" class="d-flex justify-content-center align-items-center">
-			<div class="row justify-content-center ms-1 me-1">
-				<div class="eeey-left col-lg-5 col-sm-12 mobile-pad-1rem d-flex align-items-center">
-					<div id="carouselExampleDark" class="carousel carousel-dark slide border shadow" data-bs-ride="carousel">
-						<div class="carousel-indicators">
-							<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-							<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-							<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-						</div>
-						<div class="carousel-inner">
-							<div class="carousel-item active" data-bs-interval="10000">
-								<img src="assets/image/cgc-fss_login.png" class="d-block w-100" alt="...">
-							</div>
-							<div class="carousel-item" data-bs-interval="2000">
-								<img src="assets/image/cgc-fss_home.png" class="d-block w-100" alt="...">
-							</div>
-							<div class="carousel-item">
-								<img src="assets/image/cgc-fss_about.png" class="d-block w-100" alt="...">
-							</div>
-						</div>
-						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="visually-hidden">Previous</span>
-						</button>
-						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="visually-hidden">Next</span>
-						</button>
+		<div class="project--bg d-flex justify-content-evenly align-items-center project--flex-horizontal">
+			<!-- 1st Project -->
+			<div class="card border rounded shadow" style="width: 28rem;">
+				<div id="carouselExampleDark" class="card-img-top carousel carousel-dark slide">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
 					</div>
-				</div>
-				<div class="mobile-btn-details">
-					<a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-						<i><b>Project Details</b></i>
-					</a>
-					<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-						<div class="offcanvas-header">
-							<h5 class="offcanvas-title" id="offcanvasExampleLabel">
-								<p><b>CGC-FSS <br> | Faculty Scheduling System</b></p>
-							</h5>
-
-							<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					<div class="carousel-inner">
+						<div class="carousel-item active" data-bs-interval="10000">
+							<img src="assets/image/cgc-fss_login.png" class="d-block w-100 rounded" alt="...">
 						</div>
-						<div class="offcanvas-body">
-							<hr>
+						<div class="carousel-item" data-bs-interval="2000">
+							<img src="assets/image/cgc-fss_home.png" class="d-block w-100 rounded" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="assets/image/cgc-fss_about.png" class="d-block w-100 rounded" alt="...">
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+				<div class="card-body">
+					<h5 class="card-title">CGC-FSS | Faculty Scheduling System</h5>
+					<div id="non-mobile">
+						<p class="card-text">
 							CGC-FSS is a scheduling system built for CGC (CITI Global College) that allows the scheduler to automate the scheduling process. Deployed on ph.000webhost.
-							<br /><br />
-							<i><b>Note:</b>This project is compatible only with desktop/laptop sized monitors.</i>
-							<br /> <br />
+							<br><br>
+							<i><b>Note:</b> This project is compatible only with desktop/laptop sized monitors.</i>
+							<br><br>
 							<b>Technology used:</b><br />
 							HTML, CSS (Bootstrap v5), JavaScript, PHP, MySQL, Excel spreadsheet, phpMailer, DataTables, html2canvas, FontAwesome.
-							<br /><br />
+							<br><br>
 							<b>Demo Account:</b>
-							<br />
-							Username: demo
-							<br />
-							<p>Password: demo1234$</p>
-							<a href="https://cgc-fss.000webhostapp.com/Prototype/login/" target="_blank" class="btn btn-primary">See Live</a>
-							<a href="https://github.com/ppacris/CGC-FSS" target="_blank" class="btn btn-primary">Source Code</a>
-
+							<br>
+							Username: demo <br>
+							Password: demo1234$
+						</p>
+						<a href="https://cgc-fss.000webhostapp.com/Prototype/login/" target="_blank" class="btn btn-primary">See Live</a>
+						<a href="https://github.com/ppacris/CGC-FSS" target="_blank" class="btn btn-primary">Source Code</a>
+					</div>
+					<!-- MOBILE SIZE SCREEN -->
+					<div class="mobile-btn-details">
+						<a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+							<i><b>Project Details</b></i>
+						</a>
+						<!-- Offcanvas -->
+						<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+							<div class="offcanvas-header">
+								<h5 class="offcanvas-title" id="offcanvasExampleLabel">
+									<p><b>CGC-FSS <br> | Faculty Scheduling System</b></p>
+								</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+							</div>
+							<div class="offcanvas-body">
+								<hr>
+								CGC-FSS is a scheduling system built for CGC (CITI Global College) that allows the scheduler to automate the scheduling process. Deployed on ph.000webhost.
+								<br /><br />
+								<i><b>Note:</b>This project is compatible only with desktop/laptop sized monitors.</i>
+								<br /> <br />
+								<b>Technology used:</b><br />
+								HTML, CSS (Bootstrap v5), JavaScript, PHP, MySQL, Excel spreadsheet, phpMailer, DataTables, html2canvas, FontAwesome.
+								<br /><br />
+								<b>Demo Account:</b>
+								<br />
+								Username: demo
+								<br />
+								<p>Password: demo1234$</p>
+								<a href="https://cgc-fss.000webhostapp.com/Prototype/login/" target="_blank" class="btn btn-primary">See Live</a>
+								<a href="https://github.com/ppacris/CGC-FSS" target="_blank" class="btn btn-primary">Source Code</a>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="eeey-right col-lg-5 col-sm-11 border shadow p-3">
-					<p><b>CGC-FSS | Faculty Scheduling System</b></p>
-					<hr>
-					CGC-FSS is a scheduling system built for CGC (CITI Global College) that allows the scheduler to automate the scheduling process. Deployed on ph.000webhost.
-					<br />
-					<i><b>Note:</b>This project is compatible only with desktop/laptop sized monitors.</i>
-					<br /> <br />
-					<b>Technology used:</b><br />
-					HTML, CSS (Bootstrap v5), JavaScript, PHP, MySQL, Excel spreadsheet, phpMailer, DataTables, html2canvas, FontAwesome.
-					<br /><br />
-					<b>Demo Account:</b>
-					<br />
-					Username: demo
-					<br />
-					<p>Password: demo1234$</p>
-					<a href="https://cgc-fss.000webhostapp.com/Prototype/login/" target="_blank" class="btn btn-primary">See Live</a>
-					<a href="https://github.com/ppacris/CGC-FSS" target="_blank" class="btn btn-primary">Source Code</a>
+			</div>
+
+			<!-- 2nd Project -->
+			<div class="card border rounded shadow coming-soon" style="width: 28rem;">
+				<div class="card-img-top">
+					<img src="assets/image/cooming_soon.png" class="d-block w-100 rounded" alt="...">
+				</div>
+				<div class="card-body">
+					<h5 class="card-title">Lorem ipsum | Lorem ipsum dolor.</h5>
+					<div id="non-mobile">
+						<p class="card-text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit nibh eget neque rhoncus, eu consequat velit bibendum. Integer malesuada metus.
+							<br><br>
+							<i><b>Lorem:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed.</i>
+							<br><br>
+							<b>Lorem ipsum:</b><br />
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nisl id tellus posuere malesuada. Suspendisse.
+							<br><br>
+							<b>Lorem ipsum:</b>
+							<br>
+							Lorem: ipsum <br>
+							Lorem: ipsum
+						</p>
+						<a href="#" target="_blank" class="btn btn-primary coming-soon--btn ">See Live</a>
+						<a href="#" target="_blank" class="btn btn-primary coming-soon--btn ">Source Code</a>
+					</div>
+					<!-- MOBILE SIZE SCREEN -->
+					<div class="mobile-btn-details">
+						<a class="btn btn-primary coming-soon--btn" data-bs-toggle="offcanvas" href="#offcanvasExample1" role="button" aria-controls="offcanvasExample">
+							<i><b>Project Details</b></i>
+						</a>
+						<!-- Offcanvas -->
+						<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample1" aria-labelledby="offcanvasExampleLabel">
+							<div class="offcanvas-header">
+								<h5 class="offcanvas-title" id="offcanvasExampleLabel">
+									<p><b>Lorem ipsum <br> | Lorem ipsum dolor.</b></p>
+								</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+							</div>
+							<div class="offcanvas-body">
+								<hr>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit nibh eget neque rhoncus, eu consequat velit bibendum. Integer malesuada metus.
+								<br><br>
+								<i><b>Lorem:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed.</i>
+								<br><br>
+								<b>Lorem ipsum:</b><br>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nisl id tellus posuere malesuada. Suspendisse.
+								<br><br>
+								<b>Lorem ipsum:</b>
+								<br>
+								Lorem: ipsum <br>
+								<p>Lorem: ipsum</p>
+								<a href="#" target="_blank" class="btn btn-primary coming-soon--btn ">See Live</a>
+								<a href="#" target="_blank" class="btn btn-primary coming-soon--btn ">Source Code</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section id="about"></section>
+	<section id="about">
+		<div class=""></div>
+	</section>
 
 	<section id="contact">
-		<form name="submit-to-google-sheet"></form>
+		<div class="">
+			<form name="submit-to-google-sheet"></form>
+		</div>
 	</section>
 
 	<!-- JavaScript -->
@@ -266,7 +326,6 @@
 		};
 
 		var navbar = document.getElementById("navbar");
-		var navbarUI = document.getElementById("UI");
 		var sticky = navbar.offsetTop;
 
 		function myFunction() {
