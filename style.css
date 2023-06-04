@@ -255,9 +255,6 @@ section {
 	display: none;
 }
 
-.card {
-	width: 28rem;
-}
 
 @media (max-width: 991px) {
 
@@ -287,10 +284,6 @@ section {
 		padding-bottom: 1rem;
 	}
 
-	.card {
-		width: 22rem;
-	}
-
 	.coming-soon:hover,
 	.card:hover {
 		transform: none;
@@ -310,7 +303,9 @@ section {
 	}
 }
 
-
+.card {
+	width: 28rem;
+}
 
 @media (max-width: 825px) {
 
@@ -334,6 +329,9 @@ section {
 		/* Adjust the margin top value as desired */
 	}
 
+	.card {
+		width: 22rem;
+	}
 }
 
 @media (max-width: 575px) {
