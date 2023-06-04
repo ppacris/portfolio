@@ -290,6 +290,10 @@ section {
 	}
 }
 
+.card {
+	width: 28rem;
+}
+
 @media (max-width: 900px) {
 	#name {
 		font-size: 1.8rem;
@@ -301,11 +305,12 @@ section {
 		top: calc(5% + 13rem);
 		/* Adjust the margin top value as desired */
 	}
+
+	.card {
+		width: 18rem;
+	}
 }
 
-.card {
-	width: 28rem;
-}
 
 @media (max-width: 825px) {
 
@@ -329,9 +334,7 @@ section {
 		/* Adjust the margin top value as desired */
 	}
 
-	.card {
-		width: 22rem;
-	}
+
 }
 
 @media (max-width: 575px) {
