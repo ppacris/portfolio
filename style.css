@@ -290,9 +290,6 @@ section {
 	}
 }
 
-.card {
-	width: 28rem;
-}
 
 @media (max-width: 900px) {
 	#name {
@@ -305,12 +302,11 @@ section {
 		top: calc(5% + 13rem);
 		/* Adjust the margin top value as desired */
 	}
-
-	.card {
-		width: 22rem;
-	}
 }
 
+.card {
+	width: 28rem;
+}
 
 @media (max-width: 825px) {
 
@@ -334,7 +330,9 @@ section {
 		/* Adjust the margin top value as desired */
 	}
 
-
+	.card {
+		width: 22rem;
+	}
 }
 
 @media (max-width: 575px) {
