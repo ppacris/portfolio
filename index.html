@@ -274,7 +274,7 @@
 	<section id="about">
 		<div class="about--bg">
 			<div class="about-container position-absolute top-50 start-50 translate-middle border rounded shadow-sm bg-white">
-				<div class="col p-5 m-5">
+				<div class="col p-5 m-5" id="about-col">
 					<h1 class="about-text--me pt-5">About me</h1>
 					<p class="ps-3 pt-2">
 						Hello, I'm Arnniel Kheneth D. Pacris! 👋 <br>
@@ -540,6 +540,12 @@
 
 	<!-- smooth transition on project -->
 	<script type="text/javascript">
+		// Empty
+
+	</script>
+
+	<!-- About -->
+	<script type="text/javascript">
 		var tablinks = document.getElementsByClassName("tab-links");
 		var tabcontents = document.getElementsByClassName("tab-contents");
 
@@ -557,10 +563,23 @@
 		}
 
 	</script>
-
-	<!-- About -->
+	<!-- About Mobile Responsive -->
 	<script type="text/javascript">
-		//Empty
+		window.addEventListener('DOMContentLoaded', () => {
+			const aboutCol = document.getElementById('about-col');
+			const mediaQuery = window.matchMedia('(max-width: 991px)');
+
+			function handleMediaQueryChange(e) {
+				if (e.matches) {
+					aboutCol.classList.remove('p-5');
+				} else {
+					aboutCol.classList.add('p-5');
+				}
+			}
+
+			handleMediaQueryChange(mediaQuery);
+			mediaQuery.addListener(handleMediaQueryChange);
+		});
 
 	</script>
 

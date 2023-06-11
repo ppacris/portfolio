@@ -363,6 +363,7 @@ section {
 	display: none;
 }
 
+
 @media (max-width: 991px) {
 
 	/*-- HIDE default Navbar @Mobile sized --*/
@@ -400,7 +401,9 @@ section {
 		background-color: red;
 	}
 
-
+	#about-col {
+		margin: 0.7rem !important;
+	}
 }
 
 @media (max-width: 900px) {
