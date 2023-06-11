@@ -423,6 +423,7 @@ section {
 	width: 28rem;
 }
 
+
 @media (max-width: 825px) {
 
 	#name > .magic > .magic-text {
@@ -455,6 +456,14 @@ section {
 		font-size: 22px;
 	}
 
+	.mobile-ul {
+		display: none !important;
+	}
+
+	/* MAKING MOBILE RESPONSIVE	*/
+	#web-development-toggle {
+		cursor: pointer;
+	}
 }
 
 @media (max-width: 575px) {

@@ -289,8 +289,8 @@
 						<p class="tab-links" onclick="opentab('Experience')">Experience</p>
 					</div>
 					<div class="tab-contents tab-contents--devicon tab-contents--active" id="Skills">
-						<kbd><i> Web development:</i></kbd>
-						<ul>
+						<kbd id="web-development-toggle"><i> Web development:</i></kbd>
+						<ul class="mobile-ul">
 							<li>
 								<span>
 									<img style="width: 36px; height: 36px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
@@ -338,7 +338,7 @@
 							</li>
 						</ul>
 						<kbd><i>Other &amp; tools:</i></kbd>
-						<ul>
+						<ul class="mobile-ul">
 							<li>
 								<span>
 									<img style="width: 40px; height: 40px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-plain.svg" />
@@ -582,6 +582,20 @@
 		});
 
 	</script>
+	<script type="text/javascript">
+		window.addEventListener('DOMContentLoaded', function() {
+			if (window.matchMedia("(max-width: 825px)").matches) {
+				var webDevelopmentToggle = document.getElementById('web-development-toggle');
+				var mobileUl = document.querySelector('.mobile-ul');
+
+				webDevelopmentToggle.addEventListener('click', function() {
+					mobileUl.classList.toggle('hidden-devicon');
+				});
+			}
+		});
+
+	</script>
+
 
 
 	<!-- contact google spreadsheet -->
