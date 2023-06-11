@@ -23,6 +23,9 @@ body::-webkit-scrollbar-thumb {
 	border-radius: 5px;
 }
 
+
+/*---------------------------- Particles / Home ----------------------------*/
+
 #particles-js {
 	position: relative;
 	height: 100vh;
@@ -35,6 +38,8 @@ canvas {
 	display: block;
 	vertical-align: bottom;
 }
+
+/*---------------------------- Navigation bar ----------------------------*/
 
 nav {
 	position: fixed;
@@ -98,17 +103,105 @@ section {
 	height: 100vh;
 }
 
+/*---------------------------- Project ----------------------------*/
+
 .project--bg {
-	background: linear-gradient(to bottom, black, pink 35%, white 65%);
+	background: linear-gradient(to bottom, black 10%, pink 50%, white 65%);
 	height: 100%;
 	width: 100%;
 	position: relative;
 }
 
+/*---------------------------- About ----------------------------*/
+
+.about--bg {
+	background: linear-gradient(to top, black 10%, pink 50%, white 65%);
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+.contact--bg {
+	background: linear-gradient(to bottom, black 10%, pink 50%, white 65%);
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+.about--bg .about-container {
+	height: 850px;
+	width: 95%;
+}
+
+.about-text--me {
+	font-family: 'Permanent Marker', cursive;
+}
+
+.tab-titles {
+	display: flex;
+	margin: 40px 0 20px;
+}
+
+.tab-links {
+	font-family: 'Permanent Marker', cursive;
+	margin-right: 50px;
+	font-size: 18px;
+	font-weight: 500;
+	cursor: pointer;
+	position: relative;
+}
+
+.tab-links::after {
+	background: linear-gradient(to right, violet, #8F00FF);
+	content: '';
+	width: 0;
+	height: 5px;
+	border-radius: 5px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+	width: 50%;
+}
+
+.tab-contents ul {
+	padding: 0;
+}
+
+.tab-contents ul li {
+	list-style: none;
+	margin: 10px 0;
+}
+
+.tab-contents ul li span {
+	color: #8F00FF;
+	font-size: 15px;
+}
+
+.tab-contents--devicon ul {
+	display: flex;
+	list-style: none;
+	padding: 0;
+}
+
+.tab-contents {
+	display: none;
+}
+
+.tab-contents.tab-contents--active {
+	display: block;
+}
+
+.tab-contents.tab-contents--devicon li {
+	margin-right: 50px;
+}
+
 .card {
 	transition: transform 0.3s ease;
 }
-
 
 .coming-soon-card-container {
 	position: relative;
@@ -138,7 +231,7 @@ section {
 	transform: translateY(-10px);
 }
 
-/* --- Name Text Effect --- */
+/*---------------------------- Name Text Effect ----------------------------*/
 
 :root {
 	--purple: rgb(123, 31, 162);
@@ -244,7 +337,7 @@ section {
 }
 
 
-/* --- Media Query --- */
+/*---------------------------- Media Query ----------------------------*/
 
 @media (max-width: 1340px) {
 	#name {
@@ -268,7 +361,6 @@ section {
 .mobile-btn-details {
 	display: none;
 }
-
 
 @media (max-width: 991px) {
 
@@ -308,7 +400,6 @@ section {
 	}
 
 }
-
 
 @media (max-width: 900px) {
 	#name {
@@ -381,7 +472,7 @@ section {
 }
 
 
-/* --- Mobile Hamburge Navbar --- */
+/*---------------------------- Mobile Hamburge Navbar ----------------------------*/
 
 .nav__btn {
 	background: radial-gradient(circle, rgb(244, 143, 177), rgb(143, 0, 255));
