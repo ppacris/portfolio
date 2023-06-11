@@ -185,6 +185,7 @@ section {
 	display: flex;
 	list-style: none;
 	padding: 0;
+	flex-wrap: wrap;
 }
 
 .tab-contents {
@@ -398,6 +399,7 @@ section {
 		color: black;
 		background-color: red;
 	}
+
 
 }
 
