@@ -131,7 +131,7 @@
 				</div>
 				<div class="card-body">
 					<h5 class="card-title">CGC-FSS | Faculty Scheduling System</h5>
-					<div id="non-mobile">
+					<div class="non-mobile">
 						<p class="card-text">
 							CGC-FSS is a scheduling system built for CGC (CITI Global College) that allows the scheduler to automate the scheduling process. Deployed on ph.000webhost.
 							<br><br>
@@ -184,62 +184,87 @@
 			</div>
 
 			<!-- 2nd Project -->
-			<p></p>
-			<div class="card border rounded shadow coming-soon">
-				<div class="card-img-top">
-					<img src="assets/image/coming_soon.png" class="d-block w-100 rounded" alt="...">
-				</div>
-				<div class="card-body">
-					<h5 class="card-title">Lorem ipsum | Lorem ipsum dolor.</h5>
-					<div id="non-mobile">
-						<p class="card-text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit nibh eget neque rhoncus, eu consequat velit bibendum. Integer malesuada metus.
-							<br><br>
-							<i><b>Lorem:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed.</i>
-							<br><br>
-							<b>Lorem ipsum:</b><br />
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nisl id tellus posuere malesuada. Suspendisse.
-							<br><br>
-							<b>Lorem ipsum:</b>
-							<br>
-							Lorem: ipsum <br>
-							Lorem: ipsum
-						</p>
-						<a href="#" target="_blank" class="btn btn-primary coming-soon--btn ">See Live</a>
-						<a href="#" target="_blank" class="btn btn-primary coming-soon--btn ">Source Code</a>
-					</div>
-					<!-- MOBILE SIZE SCREEN -->
-					<div class="mobile-btn-details">
-						<a class="btn btn-primary coming-soon--btn" data-bs-toggle="offcanvas" href="#offcanvasExample1" role="button" aria-controls="offcanvasExample">
-							<i><b>Project Details</b></i>
-						</a>
-						<!-- Offcanvas -->
-						<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample1" aria-labelledby="offcanvasExampleLabel">
-							<div class="offcanvas-header">
-								<h5 class="offcanvas-title" id="offcanvasExampleLabel">
-									<p><b>Lorem ipsum <br> | Lorem ipsum dolor.</b></p>
-								</h5>
-								<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			<div class="coming-soon-card-container">
+				<div class="card border rounded shadow coming-soon">
+					<div id="carouselExampleDark1" class="card-img-top carousel carousel-dark slide">
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							<button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							<button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+						</div>
+						<div class="carousel-inner">
+							<div class="carousel-item active" data-bs-interval="10000">
+								<img src="assets/image/coming_soon.png" class="d-block w-100 rounded" alt="...">
 							</div>
-							<div class="offcanvas-body">
-								<hr>
+							<div class="carousel-item" data-bs-interval="2000">
+								<img src="assets/image/coming_soon.png" class="d-block w-100 rounded" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img src="assets/image/coming_soon.png" class="d-block w-100 rounded" alt="...">
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark1" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark1" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+					<div class="card-body">
+						<h5 class="card-title">Lorem ipsum | Lorem ipsum dolor.</h5>
+						<div class="non-mobile">
+							<p class="card-text">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit nibh eget neque rhoncus, eu consequat velit bibendum. Integer malesuada metus.
 								<br><br>
 								<i><b>Lorem:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed.</i>
 								<br><br>
-								<b>Lorem ipsum:</b><br>
+								<b>Lorem ipsum:</b><br />
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nisl id tellus posuere malesuada. Suspendisse.
 								<br><br>
 								<b>Lorem ipsum:</b>
 								<br>
 								Lorem: ipsum <br>
-								<p>Lorem: ipsum</p>
-								<a href="#" target="_blank" class="btn btn-primary coming-soon--btn ">See Live</a>
-								<a href="#" target="_blank" class="btn btn-primary coming-soon--btn ">Source Code</a>
+								Lorem: ipsum
+							</p>
+							<a href="#" target="_blank" class="btn btn-primary coming-soon--btn ">See Live</a>
+							<a href="#" target="_blank" class="btn btn-primary coming-soon--btn ">Source Code</a>
+						</div>
+						<!-- MOBILE SIZE SCREEN -->
+						<div class="mobile-btn-details">
+							<a class="btn btn-primary coming-soon--btn" data-bs-toggle="offcanvas" href="#offcanvasExample1" role="button" aria-controls="offcanvasExample">
+								<i><b>Project Details</b></i>
+							</a>
+							<!-- Offcanvas -->
+							<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample1" aria-labelledby="offcanvasExampleLabel">
+								<div class="offcanvas-header">
+									<h5 class="offcanvas-title" id="offcanvasExampleLabel">
+										<p><b>Lorem ipsum <br> | Lorem ipsum dolor.</b></p>
+									</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+								</div>
+								<div class="offcanvas-body">
+									<hr>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit nibh eget neque rhoncus, eu consequat velit bibendum. Integer malesuada metus.
+									<br><br>
+									<i><b>Lorem:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed.</i>
+									<br><br>
+									<b>Lorem ipsum:</b><br>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nisl id tellus posuere malesuada. Suspendisse.
+									<br><br>
+									<b>Lorem ipsum:</b>
+									<br>
+									Lorem: ipsum <br>
+									<p>Lorem: ipsum</p>
+									<a href="#" target="_blank" class="btn btn-primary coming-soon--btn ">See Live</a>
+									<a href="#" target="_blank" class="btn btn-primary coming-soon--btn ">Source Code</a>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				<p class="position-absolute top-50 start-50 translate-middle coming-soon--text"><b>Coming Soon.</b></p>
 			</div>
 		</div>
 	</section>

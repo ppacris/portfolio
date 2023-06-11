@@ -109,10 +109,24 @@ section {
 	transition: transform 0.3s ease;
 }
 
-/*-- remove for off canvas to work --*/
+
+.coming-soon-card-container {
+	position: relative;
+}
+
+/*-- remove `filter` for off canvas to work --*/
 .coming-soon {
-	filter: blur(2px);
+	filter: blur(1.5px);
 	cursor: no-drop;
+}
+
+.coming-soon--text {
+	color: red;
+	background-color: black;
+	font-style: italic;
+	padding: 5px 10px;
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 26px;
 }
 
 .coming-soon--btn {
@@ -259,7 +273,7 @@ section {
 @media (max-width: 991px) {
 
 	/*-- HIDE default Navbar @Mobile sized --*/
-	#non-mobile,
+	.non-mobile,
 	nav ul li a,
 	.sticky ul {
 		display: none;
@@ -284,10 +298,15 @@ section {
 		padding-bottom: 1rem;
 	}
 
-	.coming-soon:hover,
 	.card:hover {
 		transform: none;
 	}
+
+	.coming-soon--text {
+		color: black;
+		background-color: red;
+	}
+
 }
 
 
@@ -333,6 +352,13 @@ section {
 	.card {
 		width: 21.5rem;
 	}
+
+	.coming-soon--text {
+		color: black;
+		background-color: red;
+		font-size: 22px;
+	}
+
 }
 
 @media (max-width: 575px) {
