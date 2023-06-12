@@ -200,6 +200,25 @@ section {
 	margin-right: 50px;
 }
 
+.mobile-ul--modal ul {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	flex-wrap: wrap;
+}
+
+.mobile-ul--modal ul li {
+	list-style: none;
+	margin: 10px 10px;
+}
+
+.mobile-ul--modal li span {
+	color: #8F00FF;
+	font-size: 15px;
+}
+
+
+
 .card {
 	transition: transform 0.3s ease;
 }
@@ -363,7 +382,6 @@ section {
 	display: none;
 }
 
-
 @media (max-width: 991px) {
 
 	/*-- HIDE default Navbar @Mobile sized --*/
@@ -423,7 +441,6 @@ section {
 	width: 28rem;
 }
 
-
 @media (max-width: 825px) {
 
 	#name > .magic > .magic-text {
@@ -463,6 +480,10 @@ section {
 	/* MAKING MOBILE RESPONSIVE	*/
 	#web-development-toggle {
 		cursor: pointer;
+	}
+
+	.tab-links {
+		margin-right: 30px;
 	}
 }
 

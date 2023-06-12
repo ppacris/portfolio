@@ -32,6 +32,7 @@
 
 
 <body id="smooth-scroll">
+	<!-------------------------------------------- HOME -------------------------------------------->
 	<div id="particles-js">
 		<p id="name">
 			Hi, I'm
@@ -66,7 +67,7 @@
 		</nav>
 	</div>
 
-	<!-- mobile hamburger menu -->
+	<!-------------------------------------------- mobile hamburger menu -------------------------------------------->
 	<div id="hamburger">
 		<div class="nav__btn">
 			<svg class="nav__burger__icon" viewBox="0 0 20 14">
@@ -101,6 +102,7 @@
 		</section>
 	</div>
 
+	<!-------------------------------------------- PROJECT -------------------------------------------->
 	<section id="project">
 		<div class="project--bg d-flex justify-content-evenly align-items-center project--flex-horizontal">
 			<!-- 1st Project -->
@@ -271,6 +273,7 @@
 		</div>
 	</section>
 
+	<!-------------------------------------------- ABOUT -------------------------------------------->
 	<section id="about">
 		<div class="about--bg">
 			<div class="about-container position-absolute top-50 start-50 translate-middle border rounded shadow-sm bg-white">
@@ -284,13 +287,179 @@
 						Let's shape the future through technology! 🚀
 					</p>
 					<div class="tab-titles">
-						<p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
-						<p class="tab-links" onclick="opentab('Education')">Education</p>
-						<p class="tab-links" onclick="opentab('Experience')">Experience</p>
+						<p class="tab-links active-link" id="tab-links--modal--skills" onclick="opentab('Skills')" data-bs-toggle="modal" data-bs-target="#exampleModal">Skills</p>
+						<p class="tab-links" id="tab-links--modal--education" onclick="opentab('Education')" data-bs-toggle="modal" data-bs-target="#exampleModal1">Education</p>
+						<p class="tab-links" id="tab-links--modal--experience" onclick="opentab('Experience')" data-bs-toggle="modal" data-bs-target="#exampleModal2">Experience</p>
 					</div>
 					<div class="tab-contents tab-contents--devicon tab-contents--active" id="Skills">
+						<div class="mobile-ul">
+							<kbd id="web-development-toggle"><i>Web development:</i></kbd>
+							<ul>
+								<li>
+									<span>
+										<img style="width: 36px; height: 36px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+									</span>
+									<br>
+									HTML
+								</li>
+								<li>
+									<span>
+										<img style="width: 36px; height: 36px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+									</span>
+									<br>
+									CSS
+								</li>
+								<li>
+									<span>
+										<img style="width: 36px; height: 36px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+									</span>
+									<br>
+									JavaScript
+								</li>
+								<li>
+									<span>
+										<img style="width: 40px; height: 40px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+									</span>
+									<br>
+									Bootstrap v5
+								</li>
+								<li>
+									<span>
+										<img style="width: 45px; height: 45px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" />
+									</span>
+									<br>
+									JQuery
+								</li>
+								<li>
+									<span>
+										<img style="width: 55px; height: 55px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
+									</span>
+								</li>
+								<li>
+									<span>
+										<img style="width: 60px; height: 60px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
+									</span>
+								</li>
+							</ul>
+							<kbd><i>Other &amp; tools:</i></kbd>
+							<ul>
+								<li>
+									<span>
+										<img style="width: 40px; height: 40px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-plain.svg" />
+									</span>
+									<br>
+									C++
+								</li>
+								<li>
+									<span>
+										<img style="width: 46px; height: 46px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg" />
+									</span>
+									<br>
+									.NET
+								</li>
+								<li>
+									<span>
+										<img style="width: 45px; height: 45px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg" />
+									</span>
+									<br>
+									Composer
+								</li>
+								<li>
+									<span>
+										<img style="width: 45px; height: 45px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+									</span>
+									<br>
+									Git
+								</li>
+								<li>
+									<span>
+										<img style="width: 45px; height: 45px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+									</span>
+									<br>
+									Github
+								</li>
+								<li>
+									<span>
+										<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
+									</span>
+									<br>
+									Vscode
+								</li>
+								<li>
+									<span>
+										<img style="width: 50px; height: 50px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" />
+									</span>
+									<br>
+									Visualstudio
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="tab-contents" id="Education">
+						<div class="mobile-ul">
+							<ul>
+								<li>
+									<span>
+										2019 - 2023
+									</span>
+									<br>
+									BS Computer Science from CITI Global College
+								</li>
+								<li>
+									<span>
+										2014 - 2016
+									</span>
+									<br>
+									BS Computer Engineering from Pamantasan ng Cabuyao
+								</li>
+								<li>
+									<span>
+										2009 - 2014
+									</span>
+									<br>
+									Secondary from Calamba Bayside National High School
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="tab-contents" id="Experience">
+						<div class="mobile-ul">
+							<ul>
+								<li>
+									<span>
+										08/2022 - 09/2022
+									</span>
+									<br>
+									Internship under system division at City of Information Technology Office (CITO)
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-------------------------------------------- CONTANCT -------------------------------------------->
+	<section id="contact">
+		<div class="contact--bg">
+			<form name="submit-to-google-sheet"></form>
+		</div>
+	</section>
+
+
+	<!---------------------------------------- Modal ---------------------------------------->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5" id="exampleModalLabel">Skills</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="mobile-ul--modal">
 						<kbd id="web-development-toggle"><i> Web development:</i></kbd>
-						<ul class="mobile-ul">
+						<ul>
 							<li>
 								<span>
 									<img style="width: 36px; height: 36px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
@@ -338,7 +507,7 @@
 							</li>
 						</ul>
 						<kbd><i>Other &amp; tools:</i></kbd>
-						<ul class="mobile-ul">
+						<ul>
 							<li>
 								<span>
 									<img style="width: 40px; height: 40px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-plain.svg" />
@@ -376,21 +545,34 @@
 							</li>
 							<li>
 								<span>
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
+									<img style="width: 45px; height: 45px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
 								</span>
 								<br>
 								Vscode
 							</li>
 							<li>
 								<span>
-									<img style="width: 50px; height: 50px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" />
+									<img style="width: 45px; height: 45px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" />
 								</span>
 								<br>
 								Visualstudio
 							</li>
 						</ul>
 					</div>
-					<div class="tab-contents" id="Education">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5" id="exampleModalLabel1">Education</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="mobile-ul--modal">
 						<ul>
 							<li>
 								<span>
@@ -415,7 +597,20 @@
 							</li>
 						</ul>
 					</div>
-					<div class="tab-contents" id="Experience">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5" id="exampleModalLabel2">Experience</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="mobile-ul--modal">
 						<ul>
 							<li>
 								<span>
@@ -429,16 +624,12 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
 
-	<section id="contact">
-		<div class="contact--bg">
-			<form name="submit-to-google-sheet"></form>
-		</div>
-	</section>
 
-	<!-- JavaScript -->
-	<!---------------------------------------------------->
+	<!-------------------------------------------------------------------------------------------------------------------->
+	<!---------------------------------------------------- JavaScript ---------------------------------------------------->
+	<!-------------------------------------------------------------------------------------------------------------------->
 
 	<!-- custome particles-js -->
 	<script src="script1.js"></script>
@@ -595,8 +786,39 @@
 		});
 
 	</script>
+	<script type="text/javascript">
+		function toggleModalLinks() {
+			const skillsLink = document.getElementById("tab-links--modal--skills");
+			const educationLink = document.getElementById("tab-links--modal--education");
+			const experienceLink = document.getElementById("tab-links--modal--experience");
 
+			const mediaQuery = window.matchMedia("(max-width: 825px)");
 
+			function handleMediaQuery(e) {
+				if (e.matches) {
+					skillsLink.setAttribute("data-bs-toggle", "modal");
+					skillsLink.setAttribute("data-bs-target", "#exampleModal");
+					educationLink.setAttribute("data-bs-toggle", "modal");
+					educationLink.setAttribute("data-bs-target", "#exampleModal1");
+					experienceLink.setAttribute("data-bs-toggle", "modal");
+					experienceLink.setAttribute("data-bs-target", "#exampleModal2");
+				} else {
+					skillsLink.removeAttribute("data-bs-toggle");
+					skillsLink.removeAttribute("data-bs-target");
+					educationLink.removeAttribute("data-bs-toggle");
+					educationLink.removeAttribute("data-bs-target");
+					experienceLink.removeAttribute("data-bs-toggle");
+					experienceLink.removeAttribute("data-bs-target");
+				}
+			}
+
+			handleMediaQuery(mediaQuery);
+			mediaQuery.addListener(handleMediaQuery);
+		}
+
+		toggleModalLinks();
+
+	</script>
 
 	<!-- contact google spreadsheet -->
 	<script type="text/javascript">
