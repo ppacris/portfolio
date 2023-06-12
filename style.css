@@ -112,17 +112,42 @@ section {
 	position: relative;
 }
 
+.card {
+	transition: transform 0.3s ease;
+}
+
+.coming-soon-card-container {
+	position: relative;
+}
+
+/*-- remove `filter` for off canvas to work --*/
+.coming-soon {
+	filter: blur(1.5px);
+	cursor: no-drop;
+}
+
+.coming-soon--text {
+	color: red;
+	background-color: black;
+	font-style: italic;
+	padding: 5px 10px;
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 26px;
+}
+
+.coming-soon--btn {
+	pointer-events: none;
+}
+
+.coming-soon:hover,
+.card:hover {
+	transform: translateY(-10px);
+}
+
 /*---------------------------- About ----------------------------*/
 
 .about--bg {
 	background: linear-gradient(to top, black 10%, pink 50%, white 65%);
-	height: 100%;
-	width: 100%;
-	position: relative;
-}
-
-.contact--bg {
-	background: linear-gradient(to bottom, black 10%, pink 50%, white 65%);
 	height: 100%;
 	width: 100%;
 	position: relative;
@@ -218,36 +243,60 @@ section {
 	font-size: 15px;
 }
 
-.card {
-	transition: transform 0.3s ease;
-}
+/*---------------------------- Contact ----------------------------*/
 
-.coming-soon-card-container {
+.contact--bg {
+	/*	background: linear-gradient(to bottom, black 10%, pink 50%, white 65%);*/
+	height: 100%;
+	width: 100%;
 	position: relative;
 }
 
-/*-- remove `filter` for off canvas to work --*/
-.coming-soon {
-	filter: blur(1.5px);
-	cursor: no-drop;
+
+.contact-left {
+	flex-basis: 35%;
 }
 
-.coming-soon--text {
-	color: red;
-	background-color: black;
-	font-style: italic;
-	padding: 5px 10px;
-	font-family: "Bebas Neue", sans-serif;
-	font-size: 26px;
+.contact-right {
+	flex-basis: 60%;
 }
 
-.coming-soon--btn {
-	pointer-events: none;
+.contact-left p {
+	margin-top: 30px;
 }
 
-.coming-soon:hover,
-.card:hover {
-	transform: translateY(-10px);
+.sub-title {
+	font-family: 'Permanent Marker', cursive;
+}
+
+.contact-left p i {
+	color: rgb(103, 58, 183);
+	margin-right: 15px;
+	font-size: 25px;
+}
+
+.social-icons {
+	margin-top: 30px;
+}
+
+.social-icons a {
+	text-decoration: none;
+	font-size: 35px;
+	margin-right: 15px;
+	color: #ababab;
+	display: inline-block;
+	transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+	transform: translateY(-5px)
+}
+
+.btn.btn-primary.btn-cv {
+	margin-top: 30px;
+	display: inline-block;
+	background: rgb(103, 58, 183);
+	color: white;
 }
 
 /*---------------------------- Name Text Effect ----------------------------*/
@@ -421,6 +470,19 @@ section {
 	#about-col {
 		margin: 0.7rem !important;
 	}
+
+	.about--bg .about-container {
+		height: 560px;
+		width: 95%;
+	}
+
+	.mobile-ul {
+		display: none !important;
+	}
+
+	.tab-links {
+		margin-right: 30px;
+	}
 }
 
 @media (max-width: 900px) {
@@ -433,11 +495,6 @@ section {
 		font-size: 1rem;
 		top: calc(5% + 13rem);
 		/* Adjust the margin top value as desired */
-	}
-
-	.about--bg .about-container {
-		height: 560px;
-		width: 95%;
 	}
 }
 
@@ -477,18 +534,14 @@ section {
 		font-size: 22px;
 	}
 
-	.mobile-ul {
-		display: none !important;
-	}
+
 
 	/* MAKING MOBILE RESPONSIVE	*/
 	#web-development-toggle {
 		cursor: pointer;
 	}
 
-	.tab-links {
-		margin-right: 30px;
-	}
+
 }
 
 @media (max-width: 575px) {
