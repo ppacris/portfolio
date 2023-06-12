@@ -278,7 +278,7 @@
 		<div class="about--bg">
 			<div class="about-container position-absolute top-50 start-50 translate-middle border rounded shadow-sm bg-white">
 				<div class="col p-5 m-5" id="about-col">
-					<h1 class="about-text--me pt-5">About me</h1>
+					<h1 class="about-text--me pt-5" id="about-text--me">About me</h1>
 					<p class="ps-3 pt-2 about-text--intro">
 						Hello, I'm Arnniel Kheneth D. Pacris! 👋 <br>
 						I graduated with a computer science degree in 2023, I am from Calamba City, Philippines. <br>
@@ -757,14 +757,17 @@
 	<!-- About Mobile Responsive -->
 	<script type="text/javascript">
 		window.addEventListener('DOMContentLoaded', () => {
+			const aboutText = document.getElementById('about-text--me');
 			const aboutCol = document.getElementById('about-col');
 			const mediaQuery = window.matchMedia('(max-width: 991px)');
 
 			function handleMediaQueryChange(e) {
 				if (e.matches) {
 					aboutCol.classList.remove('p-5');
+					aboutText.classList.remove('pt-5');
 				} else {
 					aboutCol.classList.add('p-5');
+					aboutText.classList.add('pt-5');
 				}
 			}
 
