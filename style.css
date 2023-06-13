@@ -252,7 +252,6 @@ section {
 	position: relative;
 }
 
-
 .contact-left {
 	flex-basis: 35%;
 }
@@ -298,6 +297,7 @@ section {
 	background: rgb(103, 58, 183);
 	color: white;
 }
+
 
 /*---------------------------- Name Text Effect ----------------------------*/
 
